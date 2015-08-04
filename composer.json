@@ -1,5 +1,5 @@
 {
-    "name": "portonefive/larapress",
+    "name": "lara-press/larapress",
     "description": "The LaraPress framework. A Laravel-based framework for WordPress developers.",
     "keywords": [
         "larapress",
@@ -30,13 +30,12 @@
         "php": ">=5.4",
         "raveren/kint": "0.9.*",
         "johnpbloch/wordpress": "4.2.*",
-        "portonefive/larapress-framework": "dev-master"
+        "lara-press/framework": "dev-master"
     },
     "extra": {
         "installer-paths": {
             "public/content/mu-plugins/{$name}/": ["larapress/framework"],
             "public/content/plugins/{$name}/": ["type:wordpress-plugin"],
-            "public/content/themes/{$name}/": ["larapress/theme"],
             "public/content/themes/{$name}/": ["type:wordpress-theme"]
         },
         "wordpress-install-dir": "public/cms"
