@@ -10,3 +10,5 @@ Thumbs.db
 /public/content/plugins/
 /public/content/uploads/
 /public/content/upgrade/
+
+composer.lock
