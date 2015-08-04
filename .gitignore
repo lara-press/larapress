@@ -1,0 +1,12 @@
+.idea/
+.DS_Store
+Thumbs.db
+
+.env
+/vendor/
+
+/public/cms/*
+!/public/cms/.gitkeep
+/public/content/plugins/
+/public/content/uploads/
+/public/content/upgrade/
