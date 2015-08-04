@@ -1,6 +1,6 @@
 <?php
 
-return array(
+return [
 
     /**
      * Edit this file in order to configure the additional
@@ -14,6 +14,6 @@ return array(
      * @param bool|array $crop   Crop option. Since 3.9, define a crop position with an array.
      * @param bool       $media  Add to media selection dropdown. Make it also available to media custom field.
      */
-    'larapress' => array(200, 150, true, true)
+    'larapress' => [200, 150, true, true]
 
-);
+];

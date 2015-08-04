@@ -4,6 +4,5 @@ use LaraPress\Admin\AdminPageController;
 
 abstract class AdminController extends AdminPageController
 {
-
     //
 }

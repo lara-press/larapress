@@ -12,6 +12,11 @@
 | loading of any our classes "manually". Feels great to relax.
 |
 */
+
+/* Wordpress :( */
+$_SERVER['SERVER_PROTOCOL'] = null;
+$_SERVER['REQUEST_METHOD'] = null;
+
 require(__DIR__ . '/public/cms/wp-blog-header.php');
 /*
 require __DIR__.'/bootstrap/autoload.php';

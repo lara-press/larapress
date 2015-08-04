@@ -13,8 +13,7 @@ return [
     |
     */
 
-    'debug' => env('APP_DEBUG', false),
-
+    'debug'           => env('APP_DEBUG', false),
     /*
     |--------------------------------------------------------------------------
     | Application URL
@@ -26,8 +25,7 @@ return [
     |
     */
 
-    'url' => 'http://localhost',
-
+    'url'             => 'http://localhost',
     /*
     |--------------------------------------------------------------------------
     | Application Timezone
@@ -39,8 +37,7 @@ return [
     |
     */
 
-    'timezone' => 'UTC',
-
+    'timezone'        => 'UTC',
     /*
     |--------------------------------------------------------------------------
     | Application Locale Configuration
@@ -52,8 +49,7 @@ return [
     |
     */
 
-    'locale' => 'en',
-
+    'locale'          => 'en',
     /*
     |--------------------------------------------------------------------------
     | Application Fallback Locale
@@ -66,7 +62,6 @@ return [
     */
 
     'fallback_locale' => 'en',
-
     /*
     |--------------------------------------------------------------------------
     | Encryption Key
@@ -78,10 +73,8 @@ return [
     |
     */
 
-    'key' => env('APP_KEY', 'ErjoSu1cM5C2p&$bpqIeJZbLPvsWQpbO'),
-
-    'cipher' => 'AES-256-CBC',
-
+    'key'             => env('APP_KEY', 'SomeRandomStringSomeRandomString'),
+    'cipher'          => 'AES-256-CBC',
     /*
     |--------------------------------------------------------------------------
     | Logging Configuration
@@ -95,8 +88,7 @@ return [
     |
     */
 
-    'log' => 'single',
-
+    'log'             => 'single',
     /*
     |--------------------------------------------------------------------------
     | Autoloaded Service Providers
@@ -136,34 +128,33 @@ return [
         Illuminate\Translation\TranslationServiceProvider::class,
         Illuminate\Validation\ValidationServiceProvider::class,
         Illuminate\View\ViewServiceProvider::class,
-         /*
-         * LaraPress Framework Service Providers
-         */
-        'LaraPress\Mail\MailServiceProvider',
-        'LaraPress\Routing\ControllerServiceProvider',
-        'LaraPress\Foundation\Providers\SupportServiceProvider',
-        'LaraPress\Auth\WordPressAuthServiceProvider',
-        'LaraPress\Hashing\HashServiceProvider',
-        'LaraPress\Posts\PostServiceProvider',
-        'LaraPress\Html\HtmlServiceProvider',
-        'LaraPress\Taxonomy\TaxonomyServiceProvider',
-        'LaraPress\Assets\AssetServiceProvider',
-        'LaraPress\MetaBox\MetaBoxServiceProvider',
+        /*
+        * LaraPress Framework Service Providers
+        */
+        LaraPress\Mail\MailServiceProvider::class,
+        LaraPress\Routing\ControllerServiceProvider::class,
+        LaraPress\Foundation\Providers\SupportServiceProvider::class,
+        LaraPress\Auth\WordPressAuthServiceProvider::class,
+        LaraPress\Hashing\HashServiceProvider::class,
+        LaraPress\Posts\PostServiceProvider::class,
+        LaraPress\Html\HtmlServiceProvider::class,
+        LaraPress\Taxonomy\TaxonomyServiceProvider::class,
+        LaraPress\Assets\AssetServiceProvider::class,
+        LaraPress\MetaBox\MetaBoxServiceProvider::class,
         /*
          * Application Service Providers...
          */
-        'App\Providers\ViewServiceProvider',
-        'App\Providers\AppServiceProvider',
-        'App\Providers\BusServiceProvider',
-        'App\Providers\ConfigServiceProvider',
-        'App\Providers\EventServiceProvider',
-        'App\Providers\RouteServiceProvider',
-        'App\Providers\MenuServiceProvider',
-        'App\Providers\SidebarServiceProvider',
-        'App\Providers\WidgetServiceProvider',
-        'App\Providers\AdminPageServiceProvider',
-        'App\Providers\TemplateAndSidebarServiceProvider',
-
+        App\Providers\ViewServiceProvider::class,
+        App\Providers\AppServiceProvider::class,
+        App\Providers\BusServiceProvider::class,
+        App\Providers\ConfigServiceProvider::class,
+        App\Providers\EventServiceProvider::class,
+        App\Providers\RouteServiceProvider::class,
+        App\Providers\MenuServiceProvider::class,
+        App\Providers\SidebarServiceProvider::class,
+        App\Providers\WidgetServiceProvider::class,
+        App\Providers\AdminPageServiceProvider::class,
+        App\Providers\TemplateAndSidebarServiceProvider::class,
 
     ],
     /*
@@ -211,16 +202,16 @@ return [
         'URL'       => Illuminate\Support\Facades\URL::class,
         'Validator' => Illuminate\Support\Facades\Validator::class,
         'View'      => Illuminate\Support\Facades\View::class,
-	'Form'      => 'Illuminate\Html\FormFacade',
-        'HTML'      => 'Illuminate\Html\HtmlFacade',
+        'Form'      => Illuminate\Html\FormFacade::class,
+        'HTML'      => Illuminate\Html\HtmlFacade::class,
         /* LaraPress Facades */
-        'Action'    => 'LaraPress\Support\Facades\Action',
-        'Filter'    => 'LaraPress\Support\Facades\Filter',
-        'PostType'  => 'LaraPress\Support\Facades\PostType',
-        'Loop'      => 'LaraPress\Support\Facades\Loop',
-        'Query'     => 'LaraPress\Support\Facades\Query',
-        'Taxonomy'  => 'LaraPress\Support\Facades\Taxonomy',
-        'Asset'     => 'LaraPress\Support\Facades\Asset',
+        'Action'    => LaraPress\Support\Facades\Action::class,
+        'Filter'    => LaraPress\Support\Facades\Filter::class,
+        'PostType'  => LaraPress\Support\Facades\PostType::class,
+        'Loop'      => LaraPress\Support\Facades\Loop::class,
+        'Query'     => LaraPress\Support\Facades\Query::class,
+        'Taxonomy'  => LaraPress\Support\Facades\Taxonomy::class,
+        'Asset'     => LaraPress\Support\Facades\Asset::class,
     ],
 
 ];

@@ -13,7 +13,9 @@
 
 /** @var LaraPress\Routing\Router $router */
 
-$router->get('/', 'HomeController@index');
+$router->get('/', function() {
+    return view('home');
+});
 
-$router->arrest(\App\Page::class, 'PageController@catchPage');
-$router->arrest(\App\Post::class, 'PostController@catchPost');
+//$router->arrest(\App\Page::class, 'PageController@catchPage');
+//$router->arrest(\App\Post::class, 'PostController@catchPost');
