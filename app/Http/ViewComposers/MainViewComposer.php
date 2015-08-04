@@ -9,20 +9,5 @@ class MainViewComposer
 
     public function compose(View $view)
     {
-        if (app()->isShared('post')) {
-            /** @var Post $post */
-            $post = app('post');
-
-            $view->with('__post', $post);
-
-            if ($post instanceof Page) {
-                $view->with(
-                    [
-                        '__template' => $post->getMeta('template'),
-                        '__sidebar'  => $post->getMeta('sidebar'),
-                    ]
-                );
-            }
-        }
     }
 }

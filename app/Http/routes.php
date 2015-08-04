@@ -1,5 +1,7 @@
 <?php
 
+/** @var LaraPress\Routing\Router $router */
+
 /*
 |--------------------------------------------------------------------------
 | Application Routes
@@ -11,11 +13,14 @@
 |
 */
 
-/** @var LaraPress\Routing\Router $router */
-
 $router->get('/', function() {
     return view('home');
 });
 
-//$router->arrest(\App\Page::class, 'PageController@catchPage');
-//$router->arrest(\App\Post::class, 'PostController@catchPost');
+$router->handle(\App\Page::class, function() {
+    die('caught');
+});
+
+$router->handle(\App\Post::class, function() {
+    return 'asd';
+});

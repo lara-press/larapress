@@ -34,7 +34,7 @@
         "lara-press/framework": "dev-master"
     },
     "require-dev" : {
-        "raveren/kint": "0.9.*",
+        "raveren/kint": "1.*",
         "fzaninotto/faker": "~1.4",
         "mockery/mockery": "0.9.*",
         "phpunit/phpunit": "~4.0",
