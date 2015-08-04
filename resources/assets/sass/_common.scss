@@ -1,0 +1,51 @@
+html {
+    margin-top: 0 !important;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    display: table;
+    width: 100%;
+}
+
+main {
+
+    text-align: center;
+    display: table-cell;
+    vertical-align: middle;
+
+    .logo {
+        width: 500px;
+    }
+
+    .tag-line {
+        margin: 0;
+        font-weight: 300;
+        font-size: 1.2rem;
+    }
+
+    a {
+        color: #E94431;
+        margin: 0 0.25rem;
+    }
+}
+
+footer {
+
+    position: fixed;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    color: #555;
+    text-align: center;
+
+    a {
+        color: #E94431;
+        text-decoration: none;
+    }
+
+    .disclaimer {
+        font-size: 0.8rem;
+        color: #BBB;
+    }
+}

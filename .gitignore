@@ -4,6 +4,8 @@ Thumbs.db
 
 .env
 /vendor/
+resources/vendor
+node_modules
 
 /public/cms/*
 !/public/cms/.gitkeep
@@ -12,3 +14,8 @@ Thumbs.db
 /public/content/upgrade/
 
 composer.lock
+npm-debug.log
+
+public/content/themes/*/assets/css/*
+!public/content/themes/*/assets/css/splash.css
+public/content/themes/*/assets/js/*

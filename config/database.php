@@ -13,7 +13,8 @@ return [
     |
     */
 
-    'fetch'       => PDO::FETCH_CLASS,
+    'fetch' => PDO::FETCH_CLASS,
+
     /*
     |--------------------------------------------------------------------------
     | Default Database Connection Name
@@ -25,7 +26,8 @@ return [
     |
     */
 
-    'default'     => 'mysql',
+    'default' => env('DB_CONNECTION', 'mysql'),
+
     /*
     |--------------------------------------------------------------------------
     | Database Connections
@@ -46,21 +48,23 @@ return [
 
         'sqlite' => [
             'driver'   => 'sqlite',
-            'database' => storage_path() . '/database.sqlite',
+            'database' => storage_path('database.sqlite'),
             'prefix'   => '',
         ],
-        'mysql'  => [
+
+        'mysql' => [
             'driver'    => 'mysql',
             'host'      => env('DB_HOST', 'localhost'),
-            'database'  => env('DB_NAME', ''),
-            'username'  => env('DB_USER', ''),
-            'password'  => env('DB_PASS', ''),
+            'database'  => env('DB_DATABASE', 'forge'),
+            'username'  => env('DB_USERNAME', 'forge'),
+            'password'  => env('DB_PASSWORD', ''),
             'charset'   => 'utf8',
             'collation' => 'utf8_unicode_ci',
             'prefix'    => '',
             'strict'    => false,
         ],
-        'pgsql'  => [
+
+        'pgsql' => [
             'driver'   => 'pgsql',
             'host'     => env('DB_HOST', 'localhost'),
             'database' => env('DB_DATABASE', 'forge'),
@@ -70,16 +74,19 @@ return [
             'prefix'   => '',
             'schema'   => 'public',
         ],
+
         'sqlsrv' => [
             'driver'   => 'sqlsrv',
             'host'     => env('DB_HOST', 'localhost'),
             'database' => env('DB_DATABASE', 'forge'),
             'username' => env('DB_USERNAME', 'forge'),
             'password' => env('DB_PASSWORD', ''),
+            'charset'  => 'utf8',
             'prefix'   => '',
         ],
 
     ],
+
     /*
     |--------------------------------------------------------------------------
     | Migration Repository Table
@@ -91,7 +98,8 @@ return [
     |
     */
 
-    'migrations'  => 'migrations',
+    'migrations' => 'migrations',
+
     /*
     |--------------------------------------------------------------------------
     | Redis Databases
@@ -103,9 +111,10 @@ return [
     |
     */
 
-    'redis'       => [
+    'redis' => [
 
         'cluster' => false,
+
         'default' => [
             'host'     => '127.0.0.1',
             'port'     => 6379,

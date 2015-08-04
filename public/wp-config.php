@@ -17,9 +17,9 @@ define('DB_CHARSET', 'utf8');
 define('DB_COLLATE', '');
 
 define('DB_HOST', env('DB_HOST', 'localhost'));
-define('DB_NAME', env('DB_NAME'));
-define('DB_USER', env('DB_USER'));
-define('DB_PASSWORD', env('DB_PASS'));
+define('DB_NAME', env('DB_DATABASE'));
+define('DB_USER', env('DB_USERNAME'));
+define('DB_PASSWORD', env('DB_PASSWORD'));
 define('DB_TABLE_PREFIX', $table_prefix = env('DB_TABLE_PREFIX', 'wp_'));
 
 // WordPress URLs
@@ -28,7 +28,7 @@ define('WP_SITEURL', WP_HOME . '/cms');
 
 // Development
 define('SAVEQUERIES', env('SAVE_QUERIES', false));
-define('WP_DEBUG', env('DEBUG', false));
+define('WP_DEBUG', env('APP_DEBUG', false));
 define('SCRIPT_DEBUG', env('SCRIPT_DEBUG', false));
 
 /*

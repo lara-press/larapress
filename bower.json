@@ -1,6 +1,20 @@
 {
-    "name": "foundation-libsass-template",
-    "dependencies": {
-        "foundation": "zurb/bower-foundation"
-    }
+  "name": "larapress",
+  "version": "0.0.1",
+  "homepage": "https://github.com/lara-press/larapress",
+  "authors": [
+    "Jeff Berry <jeff@portonefive.com>"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "resources/vendor",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "foundation": "~5.5.2"
+  }
 }

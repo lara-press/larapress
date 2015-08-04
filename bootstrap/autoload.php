@@ -28,7 +28,7 @@ $composer->addPsr4('App\\', __DIR__ . '/../app');
 |
 */
 
-$compiledPath = __DIR__ . '/cache/compiled.php';
+$compiledPath = __DIR__.'/cache/compiled.php';
 
 if (file_exists($compiledPath)) {
     require $compiledPath;

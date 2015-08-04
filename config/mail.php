@@ -11,7 +11,7 @@ return [
     | sending of e-mail. You may specify which one you're using throughout
     | your application here. By default, Laravel is setup for SMTP mail.
     |
-    | Supported: "smtp", "mail", "sendmail", "mailgun", "mandrill", "log"
+    | Supported: "smtp", "mail", "sendmail", "mailgun", "mandrill", "ses", "log"
     |
     */
 
@@ -28,7 +28,8 @@ return [
     |
     */
 
-    'host'               => env('MAIL_HOST', 'smtp.mailgun.org'),
+    'host' => env('MAIL_HOST', 'smtp.mailgun.org'),
+
     /*
     |--------------------------------------------------------------------------
     | SMTP Host Port
@@ -40,7 +41,8 @@ return [
     |
     */
 
-    'port'               => env('MAIL_PORT', 587),
+    'port' => env('MAIL_PORT', 587),
+
     /*
     |--------------------------------------------------------------------------
     | Global "From" Address
@@ -52,7 +54,8 @@ return [
     |
     */
 
-    'from'               => ['address' => null, 'name' => null],
+    'from' => ['address' => null, 'name' => null],
+
     /*
     |--------------------------------------------------------------------------
     | E-Mail Encryption Protocol
@@ -64,7 +67,8 @@ return [
     |
     */
 
-    'encryption'         => 'tls',
+    'encryption' => env('MAIL_ENCRYPTION', 'tls'),
+
     /*
     |--------------------------------------------------------------------------
     | SMTP Server Username
@@ -76,7 +80,8 @@ return [
     |
     */
 
-    'username'           => env('MAIL_USERNAME'),
+    'username' => env('MAIL_USERNAME'),
+
     /*
     |--------------------------------------------------------------------------
     | SMTP Server Password
@@ -88,7 +93,8 @@ return [
     |
     */
 
-    'password'           => env('MAIL_PASSWORD'),
+    'password' => env('MAIL_PASSWORD'),
+
     /*
     |--------------------------------------------------------------------------
     | Sendmail System Path
@@ -100,7 +106,8 @@ return [
     |
     */
 
-    'sendmail'           => '/usr/sbin/sendmail -bs',
+    'sendmail' => '/usr/sbin/sendmail -bs',
+
     /*
     |--------------------------------------------------------------------------
     | Mail "Pretend"
@@ -112,6 +119,6 @@ return [
     |
     */
 
-    'pretend'            => false,
+    'pretend' => false,
 
 ];

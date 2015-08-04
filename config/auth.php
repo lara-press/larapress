@@ -27,7 +27,8 @@ return [
     |
     */
 
-    'model'                => 'App\User',
+    'model' => App\User::class,
+
     /*
     |--------------------------------------------------------------------------
     | Authentication Table
@@ -55,9 +56,9 @@ return [
     |
     */
 
-    'password'             => [
-        'email'  => 'emails.password',
-        'table'  => 'password_resets',
+    'password' => [
+        'email' => 'emails.password',
+        'table' => 'password_resets',
         'expire' => 60,
     ],
     'nicename_field'       => 'user_nicename',

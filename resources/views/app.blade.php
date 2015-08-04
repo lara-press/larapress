@@ -13,8 +13,7 @@
 
     @wphead
 
-    {!! HTML::style('http://fonts.googleapis.com/css?family=Roboto:300') !!}
-    {!! HTML::style(larapress_assets('css/style.css')) !!}
+    {!! HTML::style(larapress_assets('css/splash.css')) !!}
 
 </head>
 
@@ -28,19 +27,12 @@
 
 <footer>
 
-    <p>
-        <a href="http://lara.press">LaraPress</a> was crafted by
-        <a href="http://github.com/portonefive" target="_blank">Port One Five</a>
-    </p>
-
     <p class="disclaimer">
         WordPress is a trademark of WordPress Foundation. Laravel is a trademark of Taylor Otwell.
     </p>
 
 </footer>
 
-{!! HTML::script(larapress_assets('vendor/jquery/dist/jquery.min.js')) !!}
-{!! HTML::script(larapress_assets('vendor/foundation/js/foundation.js')) !!}
 {!! HTML::script(larapress_assets('js/app.js')) !!}
 
 @wpfooter

@@ -10,8 +10,8 @@
 
         <p>
             {!! HTML::link('http://lara.press/docs', 'Documentation', ['target' => '_blank']) !!} |
-            {!! HTML::link('http://lara.press/training', 'Training', ['target' => '_blank']) !!} |
-            {!! HTML::link('http://github.com/portonefive/larapress', 'GitHub', ['target' => '_blank']) !!}
+            {!! HTML::link('http://lara.press/learn', 'Learn', ['target' => '_blank']) !!} |
+            {!! HTML::link('http://github.com/lara-press/larapress', 'GitHub', ['target' => '_blank']) !!}
         </p>
 
     </main>
