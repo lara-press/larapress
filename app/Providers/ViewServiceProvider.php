@@ -1,8 +1,8 @@
 <?php namespace App\Providers;
 
 use Illuminate\Contracts\View\Factory;
-use LaraPress\Posts\Model as Post;
 use LaraPress\Posts\Page;
+use LaraPress\Posts\Post as Post;
 
 class ViewServiceProvider extends \LaraPress\View\ViewServiceProvider
 {
@@ -33,6 +33,13 @@ class ViewServiceProvider extends \LaraPress\View\ViewServiceProvider
                         );
                     }
                 }
+            }
+        );
+
+        filters()->listen(
+            'wp_title_parts',
+            function ($titleParts) {
+                return is_404() ? [trans('page-titles.' . $this->app['router']->currentRouteName())] : $titleParts;
             }
         );
     }

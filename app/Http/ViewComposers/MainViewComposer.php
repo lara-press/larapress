@@ -9,5 +9,6 @@ class MainViewComposer
 
     public function compose(View $view)
     {
+
     }
 }

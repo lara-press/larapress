@@ -16,6 +16,7 @@ node_modules
 composer.lock
 npm-debug.log
 
-public/content/themes/*/assets/css/*
+public/content/themes/*/assets/css
 !public/content/themes/*/assets/css/splash.css
-public/content/themes/*/assets/js/*
+public/content/themes/*/assets/js
+public/content/themes/*/assets/fonts

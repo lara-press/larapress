@@ -2,10 +2,9 @@
 
 namespace App;
 
-use LaraPress\Auth\WordPressUser;
+use LaraPress\Auth\User as BaseUser;
 
-class User extends WordPressUser
+class User extends BaseUser
 {
-
     //
 }

@@ -11,12 +11,12 @@
     "authors": [
         {
             "name": "Jeff Berry",
-            "email": "jeff@portonefive.com",
+            "email": "jeff@lara.press",
             "homepage": "http://lara.press"
         },
         {
             "name": "Nick Hough",
-            "email": "nick@portonefive.com",
+            "email": "nick@lara.press",
             "homepage": "http://lara.press"
         }
     ],
@@ -28,6 +28,7 @@
         }
     ],
     "minimum-stability": "dev",
+    "prefer-stable": true,
     "require": {
         "php": ">=5.5.9",
         "johnpbloch/wordpress": "4.2.*",

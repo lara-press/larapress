@@ -1,9 +1,10 @@
-<?php namespace App;
+<?php
 
-use LaraPress\Posts\Model;
+namespace App;
 
-class Post extends Model
+use LaraPress\Posts\Post as BasePost;
+
+class Post extends BasePost
 {
-
     //
 }

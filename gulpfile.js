@@ -14,7 +14,7 @@ var elixir = require('laravel-elixir');
 elixir(
     function (mix)
     {
-        mix.sass('app.scss', 'public/content/themes/LaraPress/assets/css');
+        mix.sass('app.scss', 'public/content/themes/larapress/assets/css');
 
         mix.scripts(
             [

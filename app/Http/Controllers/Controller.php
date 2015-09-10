@@ -8,5 +8,6 @@ use LaraPress\Routing\Controller as BaseController;
 
 abstract class Controller extends BaseController
 {
+
     use DispatchesJobs, ValidatesRequests;
 }
