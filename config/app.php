@@ -138,7 +138,7 @@ return [
         LaraPress\Hashing\HashServiceProvider::class,
         LaraPress\Posts\PostServiceProvider::class,
         LaraPress\Html\HtmlServiceProvider::class,
-        LaraPress\Taxonomy\TaxonomyServiceProvider::class,
+        LaraPress\Posts\TaxonomyServiceProvider::class,
         LaraPress\Assets\AssetServiceProvider::class,
         LaraPress\MetaBox\MetaBoxServiceProvider::class,
         /*
