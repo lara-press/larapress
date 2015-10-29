@@ -1,6 +1,6 @@
 <?php namespace App;
 
-class Page extends Post
+class Page extends \LaraPress\Posts\Page
 {
 
     //
