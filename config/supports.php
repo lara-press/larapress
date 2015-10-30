@@ -1,6 +1,6 @@
 <?php
 
-return array(
+return [
 
     /*
     * Edit this file to add features to your theme.
@@ -12,12 +12,12 @@ return array(
     // Let WordPress manage page titles
     /* --------------------------------------------------------------- */
 
-    'title-tag'       => array(),
+    'title-tag'       => [],
     /* --------------------------------------------------------------- */
     // Enable post thumbnails
     /* --------------------------------------------------------------- */
 
-    'post-thumbnails' => array('post'),
+    'post-thumbnails' => ['post'],
     /* --------------------------------------------------------------- */
     // Enable post formats (aside, gallery, link, image, ...)
     /* --------------------------------------------------------------- */
@@ -61,4 +61,4 @@ return array(
     //	'admin-preview-callback' => '',
     //),
 
-);
+];

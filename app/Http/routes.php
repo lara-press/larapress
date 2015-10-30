@@ -13,14 +13,6 @@
 |
 */
 
-$router->get('/', function() {
-    return view('home');
-});
-
-$router->handle(\App\Page::class, function() {
-    die('caught');
-});
-
-$router->handle(\App\Post::class, function() {
-    return 'asd';
+$router->get('/', function () {
+    return view('app');
 });

@@ -13,7 +13,8 @@ return [
     |
     */
 
-    'debug'           => env('APP_DEBUG', false),
+    'debug' => env('APP_DEBUG', false),
+
     /*
     |--------------------------------------------------------------------------
     | Application URL
@@ -25,7 +26,8 @@ return [
     |
     */
 
-    'url'             => 'http://localhost',
+    'url' => 'http://localhost',
+
     /*
     |--------------------------------------------------------------------------
     | Application Timezone
@@ -37,7 +39,8 @@ return [
     |
     */
 
-    'timezone'        => 'UTC',
+    'timezone' => 'UTC',
+
     /*
     |--------------------------------------------------------------------------
     | Application Locale Configuration
@@ -49,7 +52,8 @@ return [
     |
     */
 
-    'locale'          => 'en',
+    'locale' => 'en',
+
     /*
     |--------------------------------------------------------------------------
     | Application Fallback Locale
@@ -62,6 +66,7 @@ return [
     */
 
     'fallback_locale' => 'en',
+
     /*
     |--------------------------------------------------------------------------
     | Encryption Key
@@ -73,8 +78,10 @@ return [
     |
     */
 
-    'key'             => env('APP_KEY', 'SomeRandomStringSomeRandomString'),
-    'cipher'          => 'AES-256-CBC',
+    'key' => env('APP_KEY', 'SomeRandomString'),
+
+    'cipher' => 'AES-256-CBC',
+
     /*
     |--------------------------------------------------------------------------
     | Logging Configuration
@@ -88,7 +95,8 @@ return [
     |
     */
 
-    'log'             => 'single',
+    'log' => 'single',
+
     /*
     |--------------------------------------------------------------------------
     | Autoloaded Service Providers
@@ -100,7 +108,7 @@ return [
     |
     */
 
-    'providers'       => [
+    'providers' => [
 
         /*
          * Laravel Framework Service Providers...
@@ -127,7 +135,6 @@ return [
         Illuminate\Session\SessionServiceProvider::class,
         Illuminate\Translation\TranslationServiceProvider::class,
         Illuminate\Validation\ValidationServiceProvider::class,
-        Illuminate\View\ViewServiceProvider::class,
         /*
         * LaraPress Framework Service Providers
         */
@@ -146,8 +153,7 @@ return [
          */
         App\Providers\ViewServiceProvider::class,
         App\Providers\AppServiceProvider::class,
-        App\Providers\BusServiceProvider::class,
-        App\Providers\ConfigServiceProvider::class,
+        App\Providers\AuthServiceProvider::class,
         App\Providers\EventServiceProvider::class,
         App\Providers\RouteServiceProvider::class,
         App\Providers\MenuServiceProvider::class,
@@ -168,7 +174,7 @@ return [
     |
     */
 
-    'aliases'         => [
+    'aliases' => [
 
         'App'       => Illuminate\Support\Facades\App::class,
         'Artisan'   => Illuminate\Support\Facades\Artisan::class,
@@ -183,6 +189,7 @@ return [
         'Eloquent'  => Illuminate\Database\Eloquent\Model::class,
         'Event'     => Illuminate\Support\Facades\Event::class,
         'File'      => Illuminate\Support\Facades\File::class,
+        'Gate'      => Illuminate\Support\Facades\Gate::class,
         'Hash'      => Illuminate\Support\Facades\Hash::class,
         'Input'     => Illuminate\Support\Facades\Input::class,
         'Inspiring' => Illuminate\Foundation\Inspiring::class,
@@ -202,8 +209,6 @@ return [
         'URL'       => Illuminate\Support\Facades\URL::class,
         'Validator' => Illuminate\Support\Facades\Validator::class,
         'View'      => Illuminate\Support\Facades\View::class,
-        'Form'      => Illuminate\Html\FormFacade::class,
-        'HTML'      => Illuminate\Html\HtmlFacade::class,
         /* LaraPress Facades */
         'Action'    => LaraPress\Support\Facades\Action::class,
         'Filter'    => LaraPress\Support\Facades\Filter::class,

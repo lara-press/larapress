@@ -2,7 +2,7 @@
 
 return [
     'types' => [
-        'App\Page',
-        'App\Post',
+        \App\Page::class,
+        \App\Post::class
     ]
 ];

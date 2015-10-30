@@ -1,4 +1,6 @@
-<?php namespace App\Providers;
+<?php
+
+namespace App\Providers;
 
 use LaraPress\Widgets\WidgetServiceProvider as BaseWidgetServiceProvider;
 

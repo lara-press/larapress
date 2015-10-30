@@ -1,7 +1,10 @@
-<?php namespace App;
+<?php
 
-class Page extends \LaraPress\Posts\Page
+namespace App;
+
+use LaraPress\Posts\Page as BasePage;
+
+class Page extends BasePage
 {
-
     //
 }

@@ -1,10 +1,11 @@
-<?php namespace App\Providers;
+<?php
+
+namespace App\Providers;
 
 use LaraPress\Sidebars\SidebarServiceProvider as BaseSidebarServiceProvider;
 
 class SidebarServiceProvider extends BaseSidebarServiceProvider
 {
-
     /**
      * An array of sidebars to be loaded as Wordpress sidebars.
      *

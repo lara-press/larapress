@@ -1,10 +1,11 @@
-<?php namespace App\Widgets;
+<?php
+
+namespace App\Widgets;
 
 use LaraPress\Widgets\Widget;
 
 class ExampleWidget extends Widget
 {
-
     function __construct()
     {
         parent::__construct(false, 'Example Widget');

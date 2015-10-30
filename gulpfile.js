@@ -15,14 +15,5 @@ elixir(
     function (mix)
     {
         mix.sass('app.scss', 'public/content/themes/larapress/assets/css');
-
-        mix.scripts(
-            [
-                '../../vendor/jquery/dist/jquery.js',
-                '../../vendor/foundation/js/foundation.js',
-                'app.js',
-                '**/*.js'
-            ], 'public/content/themes/LaraPress/assets/js/app.js'
-        );
     }
 );

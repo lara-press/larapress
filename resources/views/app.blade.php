@@ -13,27 +13,28 @@
 
     @wphead
 
-    {!! HTML::style(larapress_assets('css/splash.css')) !!}
+    <link rel="stylesheet" href="{{ larapress_assets('css/app.css') }}">
 
 </head>
 
-<body <?php body_class(! empty($page) ? $page->slug : '') ?>>
+<body>
 
-@if (!empty($__template))
-    @include('templates.' . $__template)
-@else
-    @yield('content')
-@endif
+    <img class="logo" src="{{ larapress_assets('images/larapress.png') }}" alt="LaraPress">
 
-<footer>
+    <h3 class="tag-line">Develop with the popularity of WordPress and the power of Laravel</h3>
 
-    <p class="disclaimer">
-        WordPress is a trademark of WordPress Foundation. Laravel is a trademark of Taylor Otwell.
-    </p>
+    <ul class="nav">
+        <li><a href="http://lara.press/docs" target="_blank">Documentation</a></li>
+        <li><a href="http://lara.press/learn" target="_blank">Learn</a></li>
+        <li><a href="http://github.com/lara-press/larapress" target="_blank">GitHub</a></li>
+    </ul>
 
-</footer>
 
-{!! HTML::script(larapress_assets('js/app.js')) !!}
+    <footer>
+        <p class="disclaimer">
+            WordPress is a trademark of WordPress Foundation. Laravel is a trademark of Taylor Otwell.
+        </p>
+    </footer>
 
 @wpfooter
 
