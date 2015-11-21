@@ -135,7 +135,8 @@ return [
         Illuminate\Session\SessionServiceProvider::class,
         Illuminate\Translation\TranslationServiceProvider::class,
         Illuminate\Validation\ValidationServiceProvider::class,
-        /*
+
+       /*
         * LaraPress Framework Service Providers
         */
         LaraPress\Mail\MailServiceProvider::class,
@@ -148,9 +149,11 @@ return [
         LaraPress\Posts\TaxonomyServiceProvider::class,
         LaraPress\Assets\AssetServiceProvider::class,
         LaraPress\MetaBox\MetaBoxServiceProvider::class,
+
         /*
          * Application Service Providers...
          */
+        App\Providers\PostTypeServiceProvider::class,
         App\Providers\ViewServiceProvider::class,
         App\Providers\AppServiceProvider::class,
         App\Providers\AuthServiceProvider::class,

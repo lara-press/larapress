@@ -13,6 +13,6 @@ class WidgetServiceProvider extends BaseWidgetServiceProvider
      * @var array
      */
     protected $widgets = [
-        'App\Widgets\ExampleWidget'
+        \App\Widgets\ExampleWidget::class
     ];
 }
