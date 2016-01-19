@@ -27,12 +27,12 @@
             "url": "http://wpackagist.org"
         }
     ],
-    "minimum-stability": "dev",
+    "minimum-stability": "stable",
     "prefer-stable": true,
     "require": {
         "php": ">=5.5.9",
         "johnpbloch/wordpress": "4.4.*",
-        "lara-press/framework": "dev-0.1"
+        "lara-press/framework": "0.1@dev"
     },
     "require-dev" : {
         "raveren/kint": "1.*",
