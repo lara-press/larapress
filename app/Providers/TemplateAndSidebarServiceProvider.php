@@ -2,7 +2,7 @@
 
 namespace App\Providers;
 
-use App\Post;
+use App\Page as Post;
 use Illuminate\Foundation\Validation\ValidatesRequests;
 use Illuminate\Http\Request;
 use Illuminate\Support\ServiceProvider;

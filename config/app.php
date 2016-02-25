@@ -220,6 +220,9 @@ return [
         'Query'     => LaraPress\Support\Facades\Query::class,
         'Taxonomy'  => LaraPress\Support\Facades\Taxonomy::class,
         'Asset'     => LaraPress\Support\Facades\Asset::class,
+
+        'Form' => Collective\Html\FormFacade::class,
+        'Html' => Collective\Html\HtmlFacade::class
     ],
 
 ];
