@@ -8,7 +8,7 @@ class ExampleWidget extends Widget
 {
     function __construct()
     {
-        parent::__construct(false, 'Example Widget');
+        parent::__construct(class_basename($this), 'Example Widget');
     }
 
     // Output
