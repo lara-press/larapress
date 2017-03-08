@@ -32,7 +32,7 @@
     "require": {
         "php": ">=5.5.9",
         "johnpbloch/wordpress": "4.4.*",
-        "lara-press/framework": "dev-master"
+        "lara-press/framework": "0.2@dev"
     },
     "require-dev" : {
         "raveren/kint": "1.*",
