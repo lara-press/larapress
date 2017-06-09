@@ -5,6 +5,7 @@
   },
   "dependencies": {
     "bootstrap-sass": "^3.0.0",
-    "laravel-elixir": "^3.0.0"
+    "laravel-elixir": "^3.0.0",
+    "nvmrc-check": "^1.0.1"
   }
 }
