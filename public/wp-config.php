@@ -7,7 +7,7 @@ define('LARAPRESS_TEXTDOMAIN', 'larapress');
 require __DIR__ . '/../bootstrap/autoload.php';
 
 try {
-    Dotenv::load(dirname(__DIR__));
+    (new Dotenv\Dotenv(dirname(__DIR__)))->load();
 } catch (\InvalidArgumentException $e) {
     // we probably don't have an .env file yet
 }
