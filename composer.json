@@ -38,7 +38,7 @@
     "prefer-stable": true,
     "require": {
         "php": ">=5.5.9",
-        "lara-press/framework": "dev-master",
+        "lara-press/framework": "5.2",
         "johnpbloch/wordpress": "4.*"
     },
     "require-dev" : {
