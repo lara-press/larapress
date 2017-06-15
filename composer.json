@@ -25,13 +25,6 @@
         {
             "type": "composer",
             "url": "https://wpackagist.org"
-        },
-        {
-            "type": "path",
-            "url": "../framework",
-            "options": {
-                "symlink": true
-            }
         }
     ],
     "minimum-stability": "stable",
@@ -39,7 +32,7 @@
     "require": {
         "php": ">=5.5.9",
         "lara-press/framework": "5.3",
-        "johnpbloch/wordpress": "4.*"
+        "johnpbloch/wordpress": "~4.8"
     },
     "require-dev" : {
         "kint-php/kint": "1.*",
