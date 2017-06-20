@@ -31,11 +31,11 @@
     "prefer-stable": true,
     "require": {
         "php": ">=5.5.9",
-        "johnpbloch/wordpress": "4.4.*",
-        "lara-press/framework": "~0.2@dev"
+        "lara-press/framework": "5.3.*",
+        "johnpbloch/wordpress": "~4.8"
     },
     "require-dev" : {
-        "raveren/kint": "1.*",
+        "kint-php/kint": "1.*",
         "fzaninotto/faker": "~1.4",
         "mockery/mockery": "0.9.*",
         "phpunit/phpunit": "~4.0",

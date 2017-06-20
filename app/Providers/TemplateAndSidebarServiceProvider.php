@@ -85,6 +85,6 @@ class TemplateAndSidebarServiceProvider extends ServiceProvider
                 'sidebarOptions'  => $this->getSidebarOptions(),
                 'post'            => $post
             ]
-        );
+        )->render();
     }
 }
