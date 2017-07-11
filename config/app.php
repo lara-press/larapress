@@ -162,6 +162,7 @@ return [
         LaraPress\Posts\TaxonomyServiceProvider::class,
         LaraPress\Assets\AssetServiceProvider::class,
         LaraPress\MetaBox\MetaBoxServiceProvider::class,
+        LaraPress\Commands\CommandServiceProvider::class,
 
         /*
          * Application Service Providers...
