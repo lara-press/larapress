@@ -167,6 +167,7 @@ return [
         /*
          * Application Service Providers...
          */
+        App\Providers\TaxonomyServiceProvider::class,
         App\Providers\PostTypeServiceProvider::class,
         App\Providers\ViewServiceProvider::class,
         App\Providers\AppServiceProvider::class,
