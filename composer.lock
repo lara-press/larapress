@@ -732,12 +732,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/lara-press/framework.git",
-                "reference": "08516fb28b5e56f46e997f0fb1844819951ab8ac"
+                "reference": "a923176f444b74fb9bf004cdcd31fb9e2659c0c1"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/lara-press/framework/zipball/08516fb28b5e56f46e997f0fb1844819951ab8ac",
-                "reference": "08516fb28b5e56f46e997f0fb1844819951ab8ac",
+                "url": "https://api.github.com/repos/lara-press/framework/zipball/a923176f444b74fb9bf004cdcd31fb9e2659c0c1",
+                "reference": "a923176f444b74fb9bf004cdcd31fb9e2659c0c1",
                 "shasum": ""
             },
             "require": {
