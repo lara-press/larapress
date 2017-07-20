@@ -25,20 +25,27 @@
         {
             "type": "composer",
             "url": "https://wpackagist.org"
+        },
+        {
+            "type": "path",
+            "url": "../framework",
+            "options": {
+                "symlink": true
+            }
         }
     ],
     "minimum-stability": "stable",
     "prefer-stable": true,
     "require": {
         "php": ">=5.5.9",
-        "lara-press/framework": "5.3.*",
-        "johnpbloch/wordpress": "~4.8"
+        "johnpbloch/wordpress": "~4.8",
+        "skylerfenn/framework": "@dev"
     },
     "require-dev" : {
         "kint-php/kint": "1.*",
         "fzaninotto/faker": "~1.4",
         "mockery/mockery": "0.9.*",
-        "phpunit/phpunit": "~4.0",
+        "phpunit/phpunit": "~5.7",
         "phpspec/phpspec": "~2.1"
     },
     "autoload": {
