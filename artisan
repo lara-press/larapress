@@ -24,13 +24,6 @@ if(!file_exists(__DIR__ . '/public/cms/wp-blog-header.php')) {
 require(__DIR__ . '/public/cms/wp-blog-header.php');
 
 /*
-// Default Laravel require statements
-require __DIR__ . '/bootstrap/autoload.php';
-$app = require_once __DIR__ . '/bootstrap/app.php';
-*/
-
-
-/*
 |--------------------------------------------------------------------------
 | Run The Artisan Application
 |--------------------------------------------------------------------------

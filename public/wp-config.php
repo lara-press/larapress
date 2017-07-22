@@ -1,8 +1,8 @@
 <?php
 
-define('ABSPATH', __DIR__ . '/cms/');
-
 define('LARAPRESS_TEXTDOMAIN', 'larapress');
+
+define('ABSPATH', __DIR__ . '/cms/');
 
 require_once( ABSPATH . 'wp-includes/l10n.php' );
 
