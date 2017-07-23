@@ -32,7 +32,8 @@
     "require": {
         "php": ">=5.5.9",
         "johnpbloch/wordpress": "~4.8",
-        "lara-press/framework": "5.4.*"
+        "lara-press/framework": "5.4.*",
+        "funkjedi/composer-include-files": "^1.0"
     },
     "require-dev" : {
         "kint-php/kint": "1.*",
@@ -79,6 +80,9 @@
             "public/content/plugins/{$name}/": ["type:wordpress-plugin"],
             "public/content/themes/{$name}/": ["type:wordpress-theme"]
         },
-        "wordpress-install-dir": "public/cms"
+        "wordpress-install-dir": "public/cms",
+        "include_files": [
+            "public/cms/wp-includes/l10n.php"
+        ]
     }
 }

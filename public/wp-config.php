@@ -4,9 +4,7 @@ define('LARAPRESS_TEXTDOMAIN', 'larapress');
 
 define('ABSPATH', __DIR__ . '/cms/');
 
-require_once( ABSPATH . 'wp-includes/l10n.php' );
-
-require __DIR__ . '/../bootstrap/autoload.php';
+require __DIR__ . '/../vendor/autoload.php';
 
 try {
     (new Dotenv\Dotenv(dirname(__DIR__)))->load();
