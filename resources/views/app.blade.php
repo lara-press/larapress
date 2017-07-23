@@ -6,32 +6,32 @@
     <meta charset="<?php bloginfo('charset'); ?>">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
 
-    <title>{{ wp_title('|', false, 'right') }}</title>
+    <title>{{ wp_title('|', false, 'right') }} {{ bloginfo( 'name' ) }}</title>
 
     <link rel="profile" href="http://gmpg.org/xfn/11">
     <link href='https://fonts.googleapis.com/css?family=Roboto:300' rel='stylesheet' type='text/css'>
 
     <style type="text/css">
 
-        html,body{
+        html, body {
             height: 100%;
         }
 
-        body{
+        body {
             font-family: 'Roboto', sans-serif;
             position: relative;
             padding: 15px;
         }
 
-        img{
+        img {
             max-width: 100%;
         }
 
-        .center{
+        .center {
             text-align: center;
         }
 
-        .vertical-center{
+        .vertical-center {
             position: relative;
             top: 50%;
             -webkit-transform: translateY(-50%);
@@ -39,22 +39,22 @@
             transform: translateY(-50%);
         }
 
-        .tag-line{
+        .tag-line {
             font-weight: 300;
         }
 
-        ul.nav{
+        ul.nav {
             margin: 35px 0 0;
             padding: 0;
             list-style-type: none;
         }
 
-        ul.nav li{
+        ul.nav li {
             list-style-type: none;
             display: inline-block;
         }
 
-        ul.nav li a{
+        ul.nav li a {
             display: block;
             text-decoration: none;
             padding: 15px;
@@ -64,7 +64,7 @@
             border-radius: 4px;
         }
 
-        footer{
+        footer {
             position: fixed;
             left: 0;
             bottom: 0;
@@ -72,8 +72,8 @@
             font-size: 13px;
         }
 
-        @media all and (max-width: 400px){
-            ul.nav li{
+        @media all and (max-width: 400px) {
+            ul.nav li {
                 display: block;
             }
         }
