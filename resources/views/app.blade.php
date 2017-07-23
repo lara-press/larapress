@@ -91,7 +91,7 @@
     <h3 class="tag-line">Develop with the popularity of WordPress and the power of Laravel</h3>
 
     <ul class="nav">
-        <li><a href="https://github.com/lara-press/docs" target="_blank">Documentation</a></li>
+        <li><a href="https://github.com/lara-press/docs/blob/master/documentation.md" target="_blank">Documentation</a></li>
         <li><a href="http://github.com/lara-press/larapress" target="_blank">GitHub</a></li>
     </ul>
 
