@@ -1,5 +1,7 @@
 <?php
+
 return [
+
     /*
     |--------------------------------------------------------------------------
     | Authentication Defaults
@@ -10,10 +12,12 @@ return [
     | as required, but they're a perfect start for most applications.
     |
     */
-    'defaults'             => [
-        'guard'     => 'web',
+
+    'defaults' => [
+        'guard' => 'web',
         'passwords' => 'users',
     ],
+
     /*
     |--------------------------------------------------------------------------
     | Authentication Guards
@@ -30,16 +34,19 @@ return [
     | Supported: "session", "token"
     |
     */
-    'guards'               => [
+
+    'guards' => [
         'web' => [
-            'driver'   => 'session',
+            'driver' => 'session',
             'provider' => 'users',
         ],
+
         'api' => [
-            'driver'   => 'token',
+            'driver' => 'token',
             'provider' => 'users',
         ],
     ],
+
     /*
     |--------------------------------------------------------------------------
     | User Providers
@@ -56,21 +63,23 @@ return [
     | Supported: "database", "eloquent"
     |
     */
-    'providers'            => [
+
+    'providers' => [
         'users' => [
             'driver' => 'eloquent',
-            'model'  => App\User::class,
-            'table'  => 'wp_users',
+            'model' => App\User::class,
         ],
+
+        // 'users' => [
+        //     'driver' => 'database',
+        //     'table' => 'users',
+        // ],
     ],
+
     /*
     |--------------------------------------------------------------------------
     | Resetting Passwords
     |--------------------------------------------------------------------------
-    |
-    | Here you may set the options for resetting passwords including the view
-    | that is your password reset e-mail. You may also set the name of the
-    | table that maintains all of the reset tokens for your application.
     |
     | You may specify multiple password reset configurations if you have more
     | than one user table or model in the application and you want to have
@@ -81,95 +90,13 @@ return [
     | they have less time to be guessed. You may change this as needed.
     |
     */
-    'passwords'            => [
+
+    'passwords' => [
         'users' => [
             'provider' => 'users',
-            'email'    => 'auth.emails.password',
-            'table'    => 'password_resets',
-            'expire'   => 60,
+            'table' => 'password_resets',
+            'expire' => 60,
         ],
     ],
-    'nicename_field'       => 'user_nicename',
-    'email_field'          => 'user_email',
-    'password_field'       => 'user_pass',
-    'login_field'          => 'user_login',
-    'url_field'            => 'user_url',
-    'registered_field'     => 'user_registered',
-    'activation_key_field' => 'user_activation_key',
-    'status_field'         => 'user_status',
-    'display_name_field'   => 'display_name'
-];
 
-//<?php
-//
-//return [
-//
-//    /*
-//    |--------------------------------------------------------------------------
-//    | Default Authentication Driver
-//    |--------------------------------------------------------------------------
-//    |
-//    | This option controls the authentication driver that will be utilized.
-//    | This driver manages the retrieval and authentication of the users
-//    | attempting to get access to protected areas of your application.
-//    |
-//    | Supported: "database", "eloquent", "wordpress"
-//    |
-//    */
-//
-//    'driver'               => 'wordpress',
-//    /*
-//    |--------------------------------------------------------------------------
-//    | Authentication Model
-//    |--------------------------------------------------------------------------
-//    |
-//    | When using the "Eloquent" authentication driver, we need to know which
-//    | Eloquent model should be used to retrieve your users. Of course, it
-//    | is often just the "User" model but you may use whatever you like.
-//    |
-//    */
-//
-//    'model' => App\User::class,
-//
-//    /*
-//    |--------------------------------------------------------------------------
-//    | Authentication Table
-//    |--------------------------------------------------------------------------
-//    |
-//    | When using the "Database" authentication driver, we need to know which
-//    | table should be used to retrieve your users. We have chosen a basic
-//    | default value but you may easily change it to any table you like.
-//    |
-//    */
-//
-//    'table'                => 'wp_users',
-//    /*
-//    |--------------------------------------------------------------------------
-//    | Password Reset Settings
-//    |--------------------------------------------------------------------------
-//    |
-//    | Here you may set the options for resetting passwords including the view
-//    | that is your password reset e-mail. You can also set the name of the
-//    | table that maintains all of the reset tokens for your application.
-//    |
-//    | The expire time is the number of minutes that the reset token should be
-//    | considered valid. This security feature keeps tokens short-lived so
-//    | they have less time to be guessed. You may change this as needed.
-//    |
-//    */
-//
-//    'password' => [
-//        'email' => 'emails.password',
-//        'table' => 'password_resets',
-//        'expire' => 60,
-//    ],
-//    'nicename_field'       => 'user_nicename',
-//    'email_field'          => 'user_email',
-//    'password_field'       => 'user_pass',
-//    'login_field'          => 'user_login',
-//    'url_field'            => 'user_url',
-//    'registered_field'     => 'user_registered',
-//    'activation_key_field' => 'user_activation_key',
-//    'status_field'         => 'user_status',
-//    'display_name_field'   => 'display_name'
-//];
+];

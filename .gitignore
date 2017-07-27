@@ -1,22 +1,28 @@
-.idea/
 .DS_Store
+.env
+composer.lock
+npm-debug.log
+yarn-error.log
 Thumbs.db
 
-.env
-/vendor/
-resources/vendor
-node_modules
+/.idea
+/.vagrant
+/node_modules
+/resources/vendor
+/storage/*.key
+/vendor
 
-/public/cms/*
-!/public/cms/.gitkeep
 /public/content/plugins/
 /public/content/uploads/
 /public/content/upgrade/
 
-composer.lock
-npm-debug.log
+/public/content/themes/*/assets/css
+/!public/content/themes/*/assets/css/splash.css
+/public/content/themes/*/assets/fonts
+/public/content/themes/*/assets/js
 
-public/content/themes/*/assets/css
-!public/content/themes/*/assets/css/splash.css
-public/content/themes/*/assets/js
-public/content/themes/*/assets/fonts
+/public/cms/*
+!/public/cms/.gitkeep
+
+/public/hot
+/public/storage
