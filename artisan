@@ -24,13 +24,6 @@ if(!file_exists(__DIR__ . '/public/cms/wp-blog-header.php')) {
 require(__DIR__ . '/public/cms/wp-blog-header.php');
 
 /*
-// Default Laravel require statements
-require __DIR__ . '/bootstrap/autoload.php';
-$app = require_once __DIR__ . '/bootstrap/app.php';
-*/
-
-
-/*
 |--------------------------------------------------------------------------
 | Run The Artisan Application
 |--------------------------------------------------------------------------
@@ -53,7 +46,7 @@ $status = $kernel->handle(
 | Shutdown The Application
 |--------------------------------------------------------------------------
 |
-| Once Artisan has finished running. We will fire off the shutdown events
+| Once Artisan has finished running, we will fire off the shutdown events
 | so that any final work may be done by the application before we shut
 | down the process. This is the last thing to happen to the request.
 |
