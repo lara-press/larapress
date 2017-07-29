@@ -39,7 +39,7 @@ define('DB_PASSWORD', env('DB_PASSWORD'));
 define('DB_TABLE_PREFIX', $table_prefix = env('DB_TABLE_PREFIX', 'wp_'));
 
 // WordPress URLs
-define('WP_HOME', env('WP_HOME'));
+define('WP_HOME', env('APP_URL'));
 define('WP_SITEURL', WP_HOME . '/cms');
 
 // Development
