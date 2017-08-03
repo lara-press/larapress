@@ -199,6 +199,7 @@ return [
         App\Providers\WidgetServiceProvider::class,
         App\Providers\AdminPageServiceProvider::class,
         App\Providers\TemplateAndSidebarServiceProvider::class,
+        App\Providers\ShortcodeServiceProvider::class,
 
     ],
 
