@@ -13,7 +13,7 @@ require(dirname(__FILE__) . '/cms/wp-blog-header.php');
 do_action('template_redirect');
 
 $response = $kernel->handle(
-    $request = Illuminate\Http\Request::capture()
+    $request = $_GLOBAL['__request']
 );
 
 $response->send();
