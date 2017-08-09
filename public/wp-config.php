@@ -18,6 +18,8 @@ define('ABSPATH', __DIR__ . '/cms/');
 
 require __DIR__ . '/../vendor/autoload.php';
 
+$_GLOBAL['__request'] = Illuminate\Http\Request::capture();
+
 try {
     (new Dotenv\Dotenv(dirname(__DIR__)))->load();
 } catch (\InvalidArgumentException $e) {
