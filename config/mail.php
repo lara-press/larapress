@@ -17,6 +17,7 @@ return [
     */
 
     'driver' => env('MAIL_DRIVER', 'smtp'),
+    'override_wordpress' => true,
 
     /*
     |--------------------------------------------------------------------------
