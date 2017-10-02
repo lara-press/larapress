@@ -27,7 +27,7 @@ class TemplateAndSidebarServiceProvider extends ServiceProvider
                 'context'       => 'side',
                 'postType'      => 'page',
                 'inputHandler'  => [$this, 'metaBoxInput'],
-                'outputHandler' => [$this, 'metaBoxOutput']
+                'outputHandler' => [$this, 'metaBoxOutput'],
             ]
         );
     }
@@ -38,7 +38,7 @@ class TemplateAndSidebarServiceProvider extends ServiceProvider
             $request,
             [
                 'template' => 'in:' . implode(',', array_keys($this->getTemplateOptions())),
-                'sidebar'  => 'in:' . implode(',', array_keys($this->getSidebarOptions()))
+                'sidebar'  => 'in:' . implode(',', array_keys($this->getSidebarOptions())),
             ]
         );
 
@@ -52,8 +52,11 @@ class TemplateAndSidebarServiceProvider extends ServiceProvider
         $viewFinder = $this->app['view.finder'];
 
         $templates = [];
+        $templateFolder = '/templates';
         foreach ($viewFinder->getPaths() as $path) {
-            $possibleTemplates = $viewFinder->getFilesystem()->files($path . '/templates');
+            $possibleTemplates = $viewFinder->getFilesystem()->isDirectory($path . $templateFolder) ?
+                $viewFinder->getFilesystem()->files($path . $templateFolder) :
+                [];
 
             foreach ($possibleTemplates as $template) {
                 $templates[basename($template, '.blade.php')] =
@@ -83,7 +86,7 @@ class TemplateAndSidebarServiceProvider extends ServiceProvider
             [
                 'templateOptions' => $this->getTemplateOptions(),
                 'sidebarOptions'  => $this->getSidebarOptions(),
-                'post'            => $post
+                'post'            => $post,
             ]
         )->render();
     }
