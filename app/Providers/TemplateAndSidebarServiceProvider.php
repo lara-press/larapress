@@ -52,9 +52,10 @@ class TemplateAndSidebarServiceProvider extends ServiceProvider
         $viewFinder = $this->app['view.finder'];
 
         $templates = [];
+        $templateFolder = '/templates';
         foreach ($viewFinder->getPaths() as $path) {
-            $possibleTemplates = $viewFinder->getFilesystem()->isDirectory($path . '/templates') ?
-                $viewFinder->getFilesystem()->files($path . '/templates') :
+            $possibleTemplates = $viewFinder->getFilesystem()->isDirectory($path . $templateFolder) ?
+                $viewFinder->getFilesystem()->files($path . $templateFolder) :
                 [];
 
             foreach ($possibleTemplates as $template) {
