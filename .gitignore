@@ -11,14 +11,13 @@ Thumbs.db
 /storage/*.key
 /vendor
 
-/public/content/plugins/
 /public/content/uploads/
 /public/content/upgrade/
 
-/public/content/themes/*/assets/css
-/!public/content/themes/*/assets/css/splash.css
-/public/content/themes/*/assets/fonts
-/public/content/themes/*/assets/js
+/public/css/*
+/public/fonts/*
+/public/js/*
+/public/mix-manifest.json
 
 /public/cms/*
 !/public/cms/.gitkeep
