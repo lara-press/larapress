@@ -23,13 +23,7 @@ class ViewServiceProvider extends BaseViewServiceProvider
 
                 /** @var Post $post */
                 $view->share('__post', $post = app('post'));
-
-                if ($post instanceof Page) {
-                    $view->share([
-                        '__template' => $post->getMeta('template'),
-                        '__sidebar'  => $post->getMeta('sidebar'),
-                    ]);
-                }
+                $view->share('__template', $post->template);
             }
         });
 
