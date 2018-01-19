@@ -10,8 +10,4 @@ class PostTypeServiceProvider extends ServiceProvider
         \App\Page::class,
         \App\Post::class
     ];
-
-    public function getPostTypes() {
-        return $this->postTypes;
-    }
 }
