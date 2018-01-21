@@ -14,68 +14,68 @@
 
     <style type="text/css">
 
-        html, body {
+        html, body, main {
             height: 100%;
-        }
-
-        body {
+            margin: 0;
+            padding: 0;
             font-family: 'Roboto', sans-serif;
-            position: relative;
+        }
+
+        main {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+
+        main, footer {
             padding: 15px;
+            box-sizing: border-box;
         }
 
-        img {
+        img.logo {
             max-width: 100%;
+            align-self: center;
         }
 
-        .center {
-            text-align: center;
-        }
-
-        .vertical-center {
-            position: relative;
-            top: 50%;
-            -webkit-transform: translateY(-50%);
-            -ms-transform: translateY(-50%);
-            transform: translateY(-50%);
-        }
-
-        .tag-line {
+        h3.tag-line {
             font-weight: 300;
+            margin: 2rem 15px;
         }
 
         ul.nav {
-            margin: 35px 0 0;
+            display: flex;
+            margin: 0;
             padding: 0;
             list-style-type: none;
         }
 
-        ul.nav li {
-            list-style-type: none;
-            display: inline-block;
-        }
-
         ul.nav li a {
-            display: block;
-            text-decoration: none;
-            padding: 15px;
-            margin: 10px 5px;
+            display: inline-block;
             background: #F68D3E;
-            color: #FFF;
             border-radius: 4px;
+            padding: 15px;
+            margin: 0 5px;
+            color: #FFFFFF;
+            text-decoration: none;
         }
 
         footer {
             position: fixed;
             left: 0;
+            right: 0;
             bottom: 0;
-            width: 100%;
             font-size: 13px;
+            text-align: center;
         }
 
         @media all and (max-width: 400px) {
+            ul.nav {
+                flex-direction: column;
+                align-items: center;
+            }
             ul.nav li {
-                display: block;
+                margin-bottom: 1rem;
             }
         }
     </style>
@@ -85,21 +85,21 @@
 </head>
 
 <body>
-<div class="center vertical-center">
+<main>
 
     <img class="logo" src="{{ larapress_assets('images/larapress.png') }}" alt="LaraPress">
 
     <h3 class="tag-line">Develop with the popularity of WordPress and the power of Laravel</h3>
 
     <ul class="nav">
-        <li><a href="https://github.com/lara-press/docs/blob/master/documentation.md" target="_blank">Documentation</a></li>
+        <li><a href="https://github.com/lara-press/docs/tree/5.5" target="_blank">Documentation</a></li>
         <li><a href="http://github.com/lara-press/larapress" target="_blank">GitHub</a></li>
     </ul>
 
-</div>
+</main>
 
 <footer>
-    <p class="disclaimer center">
+    <p class="disclaimer">
         WordPress is a trademark of WordPress Foundation. Laravel is a trademark of Taylor Otwell.
     </p>
 </footer>

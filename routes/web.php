@@ -1,7 +1,5 @@
 <?php
 
-/** @var LaraPress\Routing\Router $router */
-
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -12,6 +10,8 @@
 | contains the "web" middleware group. Now create something great!
 |
 */
+
+/** @var LaraPress\Routing\Router $router */
 
 $router->get('/', function () {
     return view('app');
