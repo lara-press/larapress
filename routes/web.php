@@ -1,7 +1,5 @@
 <?php
 
-/** @var LaraPress\Routing\Router $router */
-
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -13,6 +11,8 @@
 |
 */
 
+/** @var LaraPress\Routing\Router $router */
+
 $router->get('/', function () {
-    return view('app');
+    return view('welcome');
 });
