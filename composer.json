@@ -2,7 +2,7 @@
     "name": "lara-press/larapress",
     "description": "The LaraPress framework. A Laravel-based framework for WordPress developers.",
     "keywords": [ "larapress", "framework", "laravel", "WordPress"],
-    "license": "GPL-2.0+",
+    "license": "GPL-2.0-or-later",
     "authors": [
         {
             "name": "Jeff Berry",
