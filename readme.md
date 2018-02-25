@@ -1,0 +1,1 @@
+This project is deprecated since laravel 5.6. LaraPress has be rewritten as a stand alone package. See [install guide](https://github.com/lara-press/docs/blob/5.6.0/installation.md) for details. 
